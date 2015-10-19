@@ -13,8 +13,6 @@ var hasSearched=false;
 
 //Event handlers: bind these to specific elements
 var imageClickHandler = function(){
-    console.log("Image clicked!");
-    console.log(this);
     //instantiate overlay
     createOverlay();
     //instantiate content view with image url. Pass clicked element into method.
@@ -90,16 +88,13 @@ function pullImageInfoFromJson(json) {
             console.log(imgTitle);
             images.push(imgUrl);
             titles.push(imgTitle);
-
         }
     }
-    console.log(images);
 }
 
 function insertImagesIntoDom() {
     if (images) {
         var gallery = document.getElementById('gallery');
-        console.log(gallery);
         for (var i in images) {
             var url = images[i];
             var newImgNode = document.createElement('img');
@@ -127,7 +122,6 @@ function createOverlay(){
     document.body.addEventListener('keydown', keyboardHandler, false);
     //Append overlay element to body in DOM
     document.body.appendChild(overlay);
-
 }
 
 function createContentView(element){
@@ -154,7 +148,6 @@ function createContentView(element){
         //Add into DOM
         overlay.appendChild(contentView);
         contentView.insertAdjacentHTML('afterbegin', '<span class="caption">' + title + '</span><img class="content-view-img" src=\"'+ url + '\"/>');
-
     }
 }
 
