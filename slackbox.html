@@ -13,23 +13,26 @@
     <link rel="stylesheet" href="slackbox.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navigation">
-        <div class="container-fluid">
-            <a class="navbar-brand">SlackBox v0.1</a>
-            <form id="search-form" class="navbar-form navbar-left search-form">
-                <input id="text-field" class="form-control" type="text" name="textField" placeholder="Search images...">
-                <button id="search-button" class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
-            </form>
-        </div>
-    </nav>
-    <div class="jumbotron">
-        <p>A lightbox gallery built on vanilla Javascript</p>
+<nav class="navbar navbar-inverse navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand">SlackBox v0.1</a>
+        <form id="search-form" class="navbar-form navbar-left search-form">
+            <input id="text-field" class="form-control" type="text" name="textField" placeholder="Search images...">
+            <button id="search-button" class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
+        </form>
     </div>
+</nav>
+<div class="jumbotron">
+    <p>A lightbox gallery built on vanilla Javascript</p>
+</div>
 <div class="lightbox container-fluid">
     <div id="lightbox-container" class="row">
         <div id="gallery" class="col-sm-12 col-md-offset-1 col-md-11">
         </div>
     </div>
+</div>
+<div id="footer">
+    <p>Copyright &copy; <a href="http://jonathanlimsc.github.io">jonathanlimsc</a> 2015</p>
 </div>
 </body>
 <script type="text/javascript" src="slackbox.js"></script>

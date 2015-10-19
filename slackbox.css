@@ -41,6 +41,21 @@ body{
     left: 0px;
 }
 
+.overlay-fadeout{
+    -webkit-animation-name: overlayfadeout;
+    -moz-animation: overlayfadeout;
+    -o-animation: overlayfadeout;
+    animation-name: overlayfadeout;
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    -o-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
 #left-button{
     position: relative;
     display: inline-block;
@@ -80,6 +95,18 @@ body{
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-animation-name: viewfadein;
+    -moz-animation: viewfadein;
+    -o-animation: viewfadein;
+    animation-name: viewfadein;
+    -webkit-animation-duration: 0.7s;
+    -moz-animation-duration: 0.7s;
+    -o-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
 #content-view img{
@@ -91,3 +118,41 @@ body{
     color: white;
 }
 
+@keyframes viewfadein{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1.0;
+    }
+}
+
+@keyframes overlayfadeout{
+    from{
+        background-color: rgba(0,0,0,0.88);
+        /* Override content view opacity */
+        opacity:1.0;
+    }
+
+    to{
+        background-color: rgba(0,0,0,0);
+        opacity:0;
+    }
+
+}
+
+#footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#footer a{
+    color: inherit;
+}
+
+#footer a:hover{
+    color: white;
+    text-decoration: none;
+}
