@@ -11,6 +11,7 @@ Lightbox Gallery in plain HTML5, CSS3 and Javascript
 - Clicking on any image will produce the image in Lightbox view. Users can then navigate left or right to view other images
   - Navigation can be done by clicking on the left and right arrows, or pressing the Left or Right keys
 - The Lightbox view can be closed by clicking on the 'X' button or pressing the Esc key
+- The user can make additional search queries, which will cause the gallery to reload
 
 
 
