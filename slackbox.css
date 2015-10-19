@@ -1,0 +1,93 @@
+/**
+ * Created by Jonathan Lim on 10/16/15; jonathanlimsc.github.io
+*/
+
+body{
+    background-color: rgb(76,76,76);
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.jumbotron{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.jumbotron>p{
+    margin-bottom: 0px;
+}
+.gallery-img{
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 240px;
+}
+
+.header{
+    position: relative;
+    text-align: center;
+}
+
+#overlay{
+    position: fixed;
+    display:flex;
+    background-color: rgba(0,0,0,0.88);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#left-button{
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    color: rgba(255,255,255,0.2);
+}
+
+#right-button{
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 56%;
+    color: rgba(255,255,255,0.2);
+}
+
+#close-button{
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: auto;
+    color: rgba(255,255,255,0.2);
+}
+
+#content-view{
+    position: absolute;
+    display: inline-block;
+    opacity: 1.0;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#content-view img{
+    width: 100%
+}
+#content-view span{
+    display: block;
+    text-align: center;
+    color: white;
+}
+

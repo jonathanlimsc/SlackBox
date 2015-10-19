@@ -1,0 +1,36 @@
+<!--
+ Created by Jonathan Lim on 10/16/15; jonathanlimsc.github.io
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlackBox!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slackbox.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand">SlackBox v0.1</a>
+            <form id="search-form" class="navbar-form navbar-left search-form">
+                <input id="text-field" class="form-control" type="text" name="textField" placeholder="Search images...">
+                <button id="search-button" class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <p>A lightbox gallery built on vanilla Javascript</p>
+    </div>
+<div class="lightbox container-fluid">
+    <div id="lightbox-container" class="row">
+        <div id="gallery" class="col-sm-12 col-md-offset-1 col-md-11">
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="slackbox.js"></script>
+</html>
