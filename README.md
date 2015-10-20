@@ -3,7 +3,7 @@ Lightbox Gallery in plain HTML5, CSS3 and Javascript
 
 ##Download
 1. Clone the repo
-2. Open 'slackbox.html' in your browser (Slackbox runs on the up-to-date versions of Chrome, Firefox, Safari and Internet Explorer)
+2. Open 'index.html' in your browser (Slackbox runs on the up-to-date versions of Chrome, Firefox, Safari and Internet Explorer)
 
 ##Usage
 - Users can submit search keywords and search for images through Google Custom Search API
