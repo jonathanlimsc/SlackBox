@@ -13,5 +13,6 @@ Lightbox Gallery in plain HTML5, CSS3 and Javascript
 - The Lightbox view can be closed by clicking on the 'X' button or pressing the Esc key
 - The user can make additional search queries, which will cause the gallery to reload
 
+[Project demo page](http://jonathanlimsc.github.io/SlackBox)
 
 
